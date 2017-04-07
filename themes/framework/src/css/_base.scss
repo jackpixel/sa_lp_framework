@@ -1,0 +1,49 @@
+html {
+  background: $white;
+  font-family: $family-primary;
+}
+
+body {
+    margin: 0;
+    background: $white;
+
+}
+
+img, canvas, iframe, video, svg, select, textarea {
+  max-width: 100%; }
+
+pre {padding: .5rem;
+overflow: scroll;
+background-color: $white;
+code {
+padding: 0rem;
+background-color: transparent;
+}
+}
+code {
+padding: .25rem;
+background-color: $white;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@import "nav";
+@import "footer";
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+.grey-bg {background: $grey;
+color: $white;}
+
+.fs {height: 95vh}

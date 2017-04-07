@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head" . }}
+
+<body class="Site">
+    {{ partial "nav" . }}
+    <main class="Site-content">
+
+        <section>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="box links">
+                        <ul>
+                        {{ range where .Site.Pages.ByDate.Reverse "Section" "blog" }}
+                        <li>
+                            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                            <h3>{{ .Date.Format "Mon, Jan 2, 2006" }} // // {{ .Date.Format "Mon, Jan 2, 2006" }}</h3>
+                            <p>{{ .Description }}</p>
+                            <small>Tags: {{ .Params.tags }}<br /><br /><br /></small>
+                        </li><br />
+                        {{ end }}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    {{ partial "footer" . }}
+</body>
+
+</html>
