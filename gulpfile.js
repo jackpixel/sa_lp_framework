@@ -46,6 +46,13 @@ gulp.task("assets", function () {
         .pipe(gulp.dest("themes/framework/static/assets"))
 })
 
+
+// Cname
+gulp.task("cname", function () {
+    gulp.src(['./CNAME'])
+        .pipe(gulp.dest("public/"))
+})
+
 // Watch asset folder for changes
 gulp.task("watch", ["scss", "js", "assets"], function () {
     gulp.watch("themes/framework/src/css/**/*", ["scss"])
@@ -57,3 +64,5 @@ gulp.task("watch", ["scss", "js", "assets"], function () {
 gulp.task('default', ['scss', 'js', "assets", 'watch']);
 
 gulp.task('build', ['scss', 'js', "assets"]);
+
+gulp.task('domain', ["cname"]);
