@@ -1,5 +1,8 @@
 # Landing Page Framework
 
+## !Important!
+Uses Flexbox. Currently does ***not*** have media queries. 
+
 ## Usage
 
 ### Clone or Fork Repository
