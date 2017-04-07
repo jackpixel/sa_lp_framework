@@ -6,3 +6,9 @@
 
 #### Hosted With:
 - [Surge](https://surge.sh)
+
+### Usage
+
+##### Build & Deploy
+
+> gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public
