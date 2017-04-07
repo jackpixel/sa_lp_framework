@@ -21,7 +21,7 @@ Uses Flexbox. Currently does ***not*** have media queries.
 ### Build & Deploy
 ` gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public`
 
-It is recommended that you set an alias for this since.
+It is recommended that you set an alias for this.
 
 > alias sup='gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public'
 
