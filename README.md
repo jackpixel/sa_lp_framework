@@ -1,7 +1,7 @@
 # Landing Page Framework
 
 ## !Important!
-Uses Flexbox. Currently does ***not*** have media queries. 
+Uses Flexbox. Currently does ***not*** have media queries.
 
 ## Usage
 
@@ -20,6 +20,10 @@ Uses Flexbox. Currently does ***not*** have media queries.
 
 ### Build & Deploy
 ` gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public`
+
+It is recommended that you set an alias for this since.
+
+> alias sup='gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public'
 
 
 #### Built Using:
