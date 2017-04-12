@@ -9,9 +9,9 @@ Uses Flexbox. Currently does ***not*** have media queries.
 `git clone https://github.com/matthiaskjordan/sa_lp_framework.git`
 
 ### Editing
-- Navigate to project directory ` cd sa_la_framework`
+- Navigate to project directory `cd sa_la_framework`
 - Open two terminal windows and run `gulp` and `hugo -w server`
-- Edit theme files in `./themes/framework` to change layout/appearence
+- Edit theme files in `./themes/framework` to change layout and/or appearance
 - Colors/ Fonts are defined as SCSS variables in `themes/framework/src/css/_var.scss`
 
 ---
