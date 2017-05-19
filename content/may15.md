@@ -1,4 +1,5 @@
 ---
+title: "Landing Page Framework"
 author : "Matthias Jordan"
 hero1title: "Landing Page Framework"
 hero2title: "Promo Teaser"

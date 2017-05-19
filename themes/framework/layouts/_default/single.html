@@ -11,7 +11,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="box links">
                         <ul>
-                        {{ range where .Site.Pages.ByDate.Reverse "Section" "blog" }}
+                        {{ range where .Site.Pages.ByDate.Reverse "Section" "content" }}
                         <li>
                             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
                             <h3>{{ .Date.Format "Mon, Jan 2, 2006" }} // // {{ .Date.Format "Mon, Jan 2, 2006" }}</h3>

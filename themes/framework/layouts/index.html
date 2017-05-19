@@ -3,9 +3,23 @@
 {{ partial "head" . }}
 
 <body class="Site">
+    {{ partial "nav2" . }}
     <main class="Site-content">
-        {{ partial "nav" . }}
-        {{ partial "content" . }}
+
+        <section>
+            <div class="row three-quarters middle-xs center-xs">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                        {{ range .Data.Pages.ByLastmod }}
+<li>
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+</li>
+{{ end }}
+
+                </div>
+            </div>
+        </section>
+
     </main>
     {{ partial "footer" . }}
 </body>
