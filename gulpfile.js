@@ -16,7 +16,7 @@ var onError = function (err) {
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
-    del(["themes/framework/static/css/**/*"])
+    del.sync(["themes/framework/static/css/**/*"])
     gulp.src("themes/framework/src/css/**/*.scss")
         .pipe(sass({outputStyle : "compressed"}))
         .pipe(autoprefixer({browsers : ["last 20 versions"]}))
@@ -31,7 +31,7 @@ gulp.task("scss", function () {
 
 // Hash javascript
 gulp.task("js", function () {
-    del(["themes/framework/static/js/**/*"])
+    del.sync(["themes/framework/static/js/**/*"])
     gulp.src("themes/framework/src/js/**/*")
         .pipe(hash())
         .pipe(gulp.dest("themes/framework/static/js"))
@@ -41,7 +41,7 @@ gulp.task("js", function () {
 
 // Hash assets
 gulp.task("assets", function () {
-    del(["themes/framework/static/assets/"])
+    del.sync(["themes/framework/static/assets/"])
     gulp.src(['themes/framework/src/assets/**/*'])
         .pipe(gulp.dest("themes/framework/static/assets"))
 })
@@ -59,6 +59,7 @@ gulp.task("watch", ["scss", "js", "assets"], function () {
     gulp.watch("themes/framework/src/js/**/*", ["js"])
     gulp.watch("themes/framework/src/assets/**/*", ["assets"])
 })
+
 
 
 gulp.task('default', ['scss', 'js', "assets", 'watch']);
