@@ -1,18 +1,27 @@
 # Landing Page Framework
 
-## !Important!
-Uses Flexbox. Currently does ***not*** have media queries.
+Uses [Flexbox Grid](http://flexboxgrid.com/).
 
 ## Usage
 
 ### Clone or Fork Repository
-`git clone https://github.com/matthiaskjordan/sa_lp_framework.git`
+git clone https://github.com/matthiaskjordan/sa_lp_framework.git framework
+
+### Set Up
+cd framework
+-- If needed, brew install yarn -or- [method of your choice](https://yarnpkg.com/en/docs/install)
+yarn
+
+### Usage
+Open two tabs in your terminal and run 'gulp' and 'hugo -w server' side-by-side.
+Open 'http://localhost:1313/' in the browser of your choice.
+
+Hugo supports auto-reload, all changes will be reflected in your browser.
 
 ### Editing
-- Navigate to project directory `cd sa_la_framework`
-- Open two terminal windows and run `gulp` and `hugo -w server`
 - Edit theme files in `./themes/framework` to change layout and/or appearance
 - Colors/ Fonts are defined as SCSS variables in `themes/framework/src/css/_var.scss`
+- All content is defined through metadata in `./content/framework.md`
 
 ---
 ###### Please check [Hugo docs](https://gohugo.io/overview/introduction/) for more information on working with Hugo.

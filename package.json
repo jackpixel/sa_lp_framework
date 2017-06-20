@@ -12,7 +12,8 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-awspublish": "^3.3.0",
     "gulp-hash": "^4.0.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.3"
   },
   "devDependencies": {
     "gulp-plumber": "^1.1.0"
