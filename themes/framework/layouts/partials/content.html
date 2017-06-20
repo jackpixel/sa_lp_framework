@@ -1,0 +1,93 @@
+<div id="container">
+  <video id="background_video" autoplay loop muted playsinline>
+        <source src="{{ .Params.hero1bg }}" type="video/mp4">
+    </video> {{ range first 1 .Data.Pages }}
+  <!-- Hero 1 -->
+  <div class="row" id="overlay">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 half" id="overlay">
+      <div class="row top-xs">
+        <div class="col-xs-1 half">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 hero1-text">
+          <h2 class="white">
+                    {{ .Params.hero1title }}
+            </h2>
+          <h3 class="white">
+                    {{ .Params.description1 }}
+            </h3>
+          <button class="btn-light js-scroll-down-to-form">{{ .Params.cta1}}</button>
+        </div>
+        <div class="col-xs-1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Hero 1 -->
+
+<!-- Body 1 -->
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 half Aligner">
+    <div class="box Aligner-item">
+      <p>
+        {{ .Params.body1 }}
+      </p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 grey-bg form half Aligner first-xs last-md">
+    <div class="Aligner-item">
+      <iframe src="{{ .Params.pardot }}" width="100%" height="500px" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+    </div>
+  </div>
+</div>
+<!-- END Body 1 -->
+
+<!-- Hero 2 -->
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 half" style="background-image: url({{ .Params.hero2bg }}); background-size: cover; background-position: center;">
+    <div class="row half bottom-xs end-xs ">
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 hero1-text">
+        <h2 class="white">
+                        {{ .Params.hero2title }}
+                </h2>
+        <h3 class="white">
+                        {{ .Params.description2 }}
+                </h3>
+      </div>
+      <div class="col-xs-1">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Hero 2 -->
+
+<!-- Body 2 -->
+<div class="row center-xs">
+  <!-- spacer -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tenth Aligner">
+  </div>
+  <!-- spacer end -->
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tenth Aligner">
+    <div class="Aligner-item">
+      {{ .Params.body2 }}
+      </p>
+    </div>
+  </div>
+  <!-- spacer -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fifth Aligner">
+  </div>
+  <!-- spacer end -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tenth Aligner">
+    <div>
+      <button class="btn-dark js-scroll-up-to-form">{{ .Params.cta2}}</button>
+    </div>
+  </div>
+  <!-- spacer -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tenth Aligner">
+  </div>
+  <!-- spacer -->
+</div>
+<!-- END Body 2 -->
+{{ end }}

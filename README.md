@@ -8,15 +8,14 @@ Uses [Flexbox Grid](http://flexboxgrid.com/).
 git clone https://github.com/matthiaskjordan/sa_lp_framework.git framework
 
 ### Set Up
-cd framework
--- If needed, brew install yarn -or- [method of your choice](https://yarnpkg.com/en/docs/install)
-yarn
+- cd framework
+- If needed, brew install yarn -or- [method of your choice](https://yarnpkg.com/en/docs/install)
+- yarn
 
 ### Usage
-Open two tabs in your terminal and run 'gulp' and 'hugo -w server' side-by-side.
-Open 'http://localhost:1313/' in the browser of your choice.
-
-Hugo supports auto-reload, all changes will be reflected in your browser.
+- Open two tabs in your terminal and run 'gulp' and 'hugo -w server' side-by-side.
+- Open 'http://localhost:1313/' in the browser of your choice.
+- Hugo supports auto-reload, all changes will be reflected in your browser.
 
 ### Editing
 - Edit theme files in `./themes/framework` to change layout and/or appearance
@@ -32,7 +31,8 @@ Hugo supports auto-reload, all changes will be reflected in your browser.
 
 It is recommended that you set an alias for this.
 
-> alias sup='gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public'
+I use:
+> alias publish='gulp build && hugo && gulp domain && surge -p ./public && rm -rf ./public'
 
 
 #### Built Using:
