@@ -18,7 +18,8 @@ git clone https://github.com/matthiaskjordan/sa_lp_framework.git framework
 - Hugo supports auto-reload, all changes will be reflected in your browser.
 
 ### Tree
-```.
+```
+.
 ├── content
 ├── node_modules
 └── themes
@@ -39,7 +40,8 @@ git clone https://github.com/matthiaskjordan/sa_lp_framework.git framework
         └── static
             ├── assets
             ├── css
-            └── js```
+            └── js
+```
 
 ### Editing
 - Edit theme files in `./themes/framework` to change layout and/or appearance
