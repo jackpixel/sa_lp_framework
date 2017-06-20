@@ -17,6 +17,30 @@ git clone https://github.com/matthiaskjordan/sa_lp_framework.git framework
 - Open 'http://localhost:1313/' in the browser of your choice.
 - Hugo supports auto-reload, all changes will be reflected in your browser.
 
+### Tree
+```.
+├── content
+├── node_modules
+└── themes
+    └── framework
+        ├── archetypes
+        ├── data
+        │   ├── assets
+        │   ├── css
+        │   └── js
+        ├── layouts
+        │   ├── _default
+        │   ├── partials
+        │   └── shortcodes
+        ├── src
+        │   ├── assets
+        │   ├── css
+        │   └── js
+        └── static
+            ├── assets
+            ├── css
+            └── js```
+
 ### Editing
 - Edit theme files in `./themes/framework` to change layout and/or appearance
 - Colors/ Fonts are defined as SCSS variables in `themes/framework/src/css/_var.scss`
